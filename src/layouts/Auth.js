@@ -3,7 +3,7 @@
 =========================================================
 * Argon Dashboard React - v1.2.4
 =========================================================
-
+Welcome!Welcome!
 * Product Page: https://www.creative-tim.com/product/argon-dashboard-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
@@ -59,19 +59,6 @@ const Auth = (props) => {
       <div className="main-content" ref={mainContent}>
         <AuthNavbar />
         <div className="header bg-gradient-info py-7 py-lg-8">
-          <Container>
-            <div className="header-body text-center mb-7">
-              <Row className="justify-content-center">
-                <Col lg="5" md="6">
-                  <h1 className="text-white">Welcome!</h1>
-                  {/* <p className="text-lead text-light">
-                    Use these awesome forms to login or create new account in
-                    your project for free.
-                  </p> */}
-                </Col>
-              </Row>
-            </div>
-          </Container>
           <div className="separator separator-bottom separator-skew zindex-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -22,6 +22,12 @@ import Register from "views/examples/Register.js";
 import Login from "views/examples/Login.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
+import BlogList from "views/examples/Bloglist";
+import AddArchive from "views/examples/AddArchives";
+import ArchivesList from "views/examples/ArchivedList";
+import FeedbackList from "views/examples/FeedbackList";
+import ContactUsList from "views/examples/ContractUsList";
+
 
 var routes = [
   {
@@ -32,46 +38,53 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
-    component: <Icons />,
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "ni ni-pin-3 text-orange",
-    component: <Maps />,
-    layout: "/admin",
-  },
-  {
-    path: "/user-profile",
-    name: "User Profile",
-    icon: "ni ni-single-02 text-yellow",
-    component: <Profile />,
-    layout: "/admin",
-  },
-  {
-    path: "/tables",
-    name: "Tables",
+    path: "/blogs",
+    name: "Blog",
     icon: "ni ni-bullet-list-67 text-red",
-    component: <Tables />,
+    component: <BlogList />,
     layout: "/admin",
   },
   {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: <Login />,
-    layout: "/auth",
+    path: "/archives",
+    name: "Add Archive",
+    icon: "ni ni-archive-2 text-purple",
+    component: <AddArchive />,
+    layout: "/admin",
   },
   {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: <Register />,
-    layout: "/auth",
+    path: "/arvhices-list",
+    name: "Archives List",
+    icon: "ni ni-bullet-list-67 text-green",
+    component: <ArchivesList />,
+    layout: "/admin",
   },
+  {
+    path: "/feedback",
+    name: "Feedback",
+    icon: "ni ni-collection",
+    component: <FeedbackList/>,
+    layout: "/admin",
+  },
+  {
+    path: "/contactus",
+    name: "Contact Us",
+    icon: "ni ni-tag text-blue",
+    component: <ContactUsList />,
+    layout: "/admin",
+  },
+  // {
+  //   path: "/login",
+  //   name: "Login",
+  //   icon: "ni ni-key-25 text-info",
+  //   component: <Login />,
+  //   layout: "/auth",
+  // },
+  // {
+  //   path: "/register",
+  //   name: "Register",
+  //   icon: "ni ni-circle-08 text-pink",
+  //   component: <Register />,
+  //   layout: "/auth",
+  // },
 ];
 export default routes;
